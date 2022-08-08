@@ -1,0 +1,101 @@
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    
+    .container {
+        height: 150px;
+        width: 40%;
+        border: 1px solid black;
+        margin: 100px auto;
+        padding: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        background-image: linear-gradient(hotpink, lightblue, yellow);
+    }
+    
+    .box-1 {
+        height: 150px;
+        width: 150px;
+        background-color: blue;
+        transition: .9s;
+        border-radius: 50%;
+        transform: rotated(45deg);
+        border: 10px solid hotpink;
+    }
+    
+    .box-1 p {
+        margin: 40px;
+        text-transform: uppercase;
+        color: white;
+        font-size: 20px;
+        padding-top: 20px;
+    }
+    
+    .box-1 p:hover {
+        transform: scale(1.8);
+        transition: .5s;
+        color: red;
+    }
+    
+    .box-2 p {
+        text-transform: uppercase;
+        color: white;
+        font-size: 20px;
+        padding-top: 40px;
+        margin-left: 20px;
+    }
+    
+    .box-2 p:hover {
+        transform: scale(1.4);
+        transition: .7s;
+    }
+    
+    .box-3 p {
+        margin: 20px;
+        text-transform: uppercase;
+        color: white;
+        font-size: 20px;
+        padding-top: 20px;
+    }
+    
+    .box-1:hover {
+        background-color: rgb(60, 255, 0);
+        /* transform: scale(5); */
+        transform: rotate(460deg);
+        transition: .9s;
+        border-radius: 50%;
+        border: 5px solid red;
+    }
+    
+    .box-2 {
+        height: 100px;
+        width: 100px;
+        background-color: green;
+        transform: skew(45deg);
+        transition: .5s;
+        /* margin: 40px; */
+    }
+    
+    .box-2:hover {
+        background-color: hotpink;
+        transform: skew(-60deg);
+        transition: .5s;
+        box-shadow: 10px 5px 5px 1px gray;
+    }
+    
+    .box-3 {
+        height: 100px;
+        width: 100px;
+        background-image: linear-gradient(20deg, red, yellow);
+        transition: .2s;
+    }
+    
+    .box-3:hover {
+        transform: scale(1.3);
+        transition: .2s;
+        margin: 20px;
+        background-image: linear-gradient(red, blue, hotpink);
+    }
